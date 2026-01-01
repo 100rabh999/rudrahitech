@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Rudra Hitech Infra Pvt. Ltd.</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Royal Background Texture -->
+    <div class="fixed inset-0 -z-10 opacity-20"
+        style="background-image:url('https://www.transparenttextures.com/patterns/cream-pixels.png');">
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="flex items-center">
+                <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo" class="h-16 mr-3" />
+                <div class="text-2xl font-bold text-amber-600">Rudra Hitech Infra Pvt. Ltd.</div>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-amber-600">Home</a>
+                <a href="about.html" class="hover:text-amber-600">About Us</a>
+                <a href="projects.html" class="hover:text-amber-600">Projects</a>
+                <a href="redevelop.html" class="hover:text-amber-600">Redevelop</a>
+                <a href="career.html" class="hover:text-amber-600">Career</a>
+                <a href="contact.html" class="hover:text-amber-600 text-amber-600 font-semibold">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+
+        <form class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-6">
+            <div>
+                <label for="name" class="block font-semibold mb-2">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required
+                    class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-600" />
+            </div>
+            <div>
+                <label for="email" class="block font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required
+                    class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-600" />
+            </div>
+            <div>
+                <label for="message" class="block font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+                    class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-600"></textarea>
+            </div>
+            <button type="submit" class="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700 transition">Send</button>
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white py-10 mt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left px-6">
+            <div>
+                <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo" class="h-16 mb-4 mx-auto md:mx-0">
+                <h3 class="text-xl font-bold mb-2">Rudra Hitech Infra Pvt. Ltd.</h3>
+                <p class="text-sm text-gray-400">Beautiful Homes, Beautiful Stories</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Quick Links</h4>
+                <nav class="flex flex-col space-y-2">
+                    <a href="index.html" class="hover:text-amber-600">Home</a>
+                    <a href="about.html" class="hover:text-amber-600">About Us</a>
+                    <a href="projects.html" class="hover:text-amber-600">Projects</a>
+                    <a href="redevelop.html" class="hover:text-amber-600">Redevelop</a>
+                    <a href="career.html" class="hover:text-amber-600">Career</a>
+                    <a href="contact.html" class="hover:text-amber-600">Contact</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Contact Info</h4>
+                <p>123 Main Street, City, Country</p>
+                <p>Email: info@rudrahitech.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 py-6 mt-10">
+            <p class="text-center text-xs text-gray-400">© 2025 Rudra Hitech Infra Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
