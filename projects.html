@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Rudra Hitech Infra Pvt. Ltd.</title>
 
-    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-gray-50 text-gray-800">
-    <!-- Royal Background Texture -->
-    <div class="fixed inset-0 -z-10 opacity-20"
-        style="background-image:url('https://www.transparenttextures.com/patterns/cream-pixels.png');">
-    </div>
+<body class="bg-gray-50 text-gray-800" style="background-image:url('images/bg/back1.jpg');">
+
 
     <!-- ================= NAVBAR ================= -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <div class="flex items-center">
-                <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo" class="h-16 mr-3" />
-                <div class="text-2xl font-bold text-amber-600">Rudra Hitech Infra Pvt. Ltd.</div>
+                <img src="images/logos.png" class="h-14 mr-3" />
+                <div class="text-xl font-bold text-amber-600">Rudra Hitech Infra Pvt. Ltd.</div>
             </div>
             <nav class="hidden md:flex space-x-6 font-medium">
                 <a href="index.html" class="hover:text-amber-600">Home</a>
                 <a href="about.html" class="hover:text-amber-600">About Us</a>
-                <a href="projects.html" class="hover:text-amber-600 text-amber-600 font-semibold">Projects</a>
+                <a href="projects.html" class="text-amber-600 font-semibold">Projects</a>
                 <a href="redevelop.html" class="hover:text-amber-600">Redevelop</a>
                 <a href="career.html" class="hover:text-amber-600">Career</a>
                 <a href="contact.html" class="hover:text-amber-600">Contact</a>
@@ -41,68 +40,150 @@
         </div>
     </header>
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-8 text-center">Our Projects</h2>
+    <!-- ================= HERO ================= -->
+    <section class="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20">
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-6 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
+            <p class="max-w-2xl text-gray-200">
+                Discover thoughtfully planned residential developments
+                built with quality, trust and long-term value.
+            </p>
+        </div>
+    </section>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="backdrop-blur bg-white/80 rounded-xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-500">
-                <img src="images/construction/bldg-1.jpeg" class="h-44 w-full object-cover" alt="Project 1">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold mb-1">Project 1</h3>
-                    <p class="text-xs text-gray-500 mb-3">Location 1</p>
-                    <div class="bg-amber-600 text-white text-sm py-1.5 rounded">Details about Project 1</div>
+    <!-- ================= PROJECT CARDS ================= -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            Ongoing <span class="text-amber-600">Developments</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- Sai Garden View -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition">
+                <img src="images/construction/bldg-1.jpeg" class="h-56 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Sai Garden View</h3>
+                    <p class="text-sm text-gray-500 mb-4">Nallasopara East</p>
+
+                    <div class="flex flex-wrap gap-3 text-sm">
+                        <span class="bg-amber-600 text-white px-4 py-1 rounded-full">1 & 2 BHK</span>
+                        <span class="bg-gray-800 text-white px-4 py-1 rounded-full">739 Sq.ft</span>
+                        <span class="bg-green-600 text-white px-4 py-1 rounded-full">Under Construction</span>
+                    </div>
                 </div>
             </div>
-            <div class="backdrop-blur bg-white/80 rounded-xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-500">
-                <img src="images/construction/bldg-2.jpeg" class="h-44 w-full object-cover" alt="Project 2">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold mb-1">Project 2</h3>
-                    <p class="text-xs text-gray-500 mb-3">Location 2</p>
-                    <div class="bg-amber-600 text-white text-sm py-1.5 rounded">Details about Project 2</div>
+
+            <!-- Swapna Lok -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition">
+                <img src="images/construction/Swapnalok.png" class="h-56 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Swapna Lok</h3>
+                    <p class="text-sm text-gray-500 mb-4">Nallasopara East</p>
+
+                    <div class="flex flex-wrap gap-3 text-sm">
+                        <span class="bg-amber-600 text-white px-4 py-1 rounded-full">1 BHK</span>
+                        <span class="bg-gray-800 text-white px-4 py-1 rounded-full">Affordable Homes</span>
+                        <span class="bg-green-600 text-white px-4 py-1 rounded-full">Ongoing</span>
+                    </div>
                 </div>
             </div>
-            <div class="backdrop-blur bg-white/80 rounded-xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-500">
-                <img src="images/construction/bldg-3.jpeg" class="h-44 w-full object-cover" alt="Project 3">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold mb-1">Project 3</h3>
-                    <p class="text-xs text-gray-500 mb-3">Location 3</p>
-                    <div class="bg-amber-600 text-white text-sm py-1.5 rounded">Details about Project 3</div>
+
+        </div>
+    </section>
+
+<!-- ================= PROJECT DETAILS ================= -->
+<section class=" py-20 border-t">
+    <div class="max-w-7xl mx-auto px-6 space-y-20">
+
+        <!-- Sai Garden View -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Image Wrapper -->
+            <div class="relative h-[320px] sm:h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl group">
+                <img src="images/construction/bldg-9.png"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+
+            <!-- Content -->
+            <div>
+                <h3 class="text-2xl font-bold text-amber-600 mb-4">Sai Garden View</h3>
+                <p class="text-gray-600 mb-6">
+                    A modern residential project offering spacious and efficiently
+                    planned 1 & 2 BHK homes designed for comfort and convenience.
+                </p>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Spacious layouts</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Excellent connectivity</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Quality materials</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Peaceful surroundings</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Swapna Lok -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Content -->
+            <div>
+                <h3 class="text-2xl font-bold text-amber-600 mb-4">Swapna Lok</h3>
+                <p class="text-gray-600 mb-6">
+                    Affordable housing project ideal for first-time home buyers,
+                    combining value pricing with trusted construction quality.
+                </p>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Budget-friendly</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Functional planning</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Daily conveniences nearby</li>
+                    <li><i class="fa-solid fa-check text-amber-600 mr-2"></i> Reliable build standards</li>
+                </ul>
+            </div>
+
+            <!-- Image Wrapper -->
+            <div class="relative h-[320px] sm:h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl group">
+                <img src="images/construction/Swapnalok.png"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class=" py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">
+                Why Choose <span class="text-amber-600">Rudra Hitech Infra</span>
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <i class="fa-solid fa-building-circle-check text-4xl text-amber-600 mb-4"></i>
+                    <h4 class="font-semibold mb-2">Quality Construction</h4>
+                    <p class="text-sm text-gray-600">Strong engineering & materials</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-handshake text-4xl text-amber-600 mb-4"></i>
+                    <h4 class="font-semibold mb-2">Transparent Process</h4>
+                    <p class="text-sm text-gray-600">Clear and ethical dealings</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot text-4xl text-amber-600 mb-4"></i>
+                    <h4 class="font-semibold mb-2">Prime Locations</h4>
+                    <p class="text-sm text-gray-600">High-growth areas</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users text-4xl text-amber-600 mb-4"></i>
+                    <h4 class="font-semibold mb-2">Customer Focus</h4>
+                    <p class="text-sm text-gray-600">Long-term satisfaction</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="bg-gray-900 text-white py-10 mt-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left px-6">
-            <div>
-                <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo" class="h-16 mb-4 mx-auto md:mx-0">
-                <h3 class="text-xl font-bold mb-2">Rudra Hitech Infra Pvt. Ltd.</h3>
-                <p class="text-sm text-gray-400">Beautiful Homes, Beautiful Stories</p>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Quick Links</h4>
-                <nav class="flex flex-col space-y-2">
-                    <a href="index.html" class="hover:text-amber-600">Home</a>
-                    <a href="about.html" class="hover:text-amber-600">About Us</a>
-                    <a href="projects.html" class="hover:text-amber-600">Projects</a>
-                    <a href="redevelop.html" class="hover:text-amber-600">Redevelop</a>
-                    <a href="career.html" class="hover:text-amber-600">Career</a>
-                    <a href="contact.html" class="hover:text-amber-600">Contact</a>
-                </nav>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Contact Info</h4>
-                <p>123 Main Street, City, Country</p>
-                <p>Email: info@rudrahitech.com</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
-        </div>
-        <div class="border-t border-gray-700 py-6 mt-10">
-            <p class="text-center text-xs text-gray-400">© 2025 Rudra Hitech Infra Pvt. Ltd. All Rights Reserved.</p>
-        </div>
-    </footer>
 </body>
-
 </html>

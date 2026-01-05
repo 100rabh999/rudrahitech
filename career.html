@@ -8,6 +8,7 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
@@ -17,11 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-gray-50 text-gray-800">
-    <!-- Royal Background Texture -->
-    <div class="fixed inset-0 -z-10 opacity-20"
-        style="background-image:url('https://www.transparenttextures.com/patterns/cream-pixels.png');">
-    </div>
+<body class="bg-gray-50 text-gray-800" style="background-image:url('images/bg/back1.jpg');">
+
 
     <!-- ================= NAVBAR ================= -->
     <header class="bg-white shadow-md">
@@ -53,35 +51,95 @@
     </section>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="bg-gray-900 text-white py-10 mt-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left px-6">
-            <div>
-                <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo" class="h-16 mb-4 mx-auto md:mx-0">
-                <h3 class="text-xl font-bold mb-2">Rudra Hitech Infra Pvt. Ltd.</h3>
-                <p class="text-sm text-gray-400">Beautiful Homes, Beautiful Stories</p>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Quick Links</h4>
-                <nav class="flex flex-col space-y-2">
-                    <a href="index.html" class="hover:text-amber-600">Home</a>
-                    <a href="about.html" class="hover:text-amber-600">About Us</a>
-                    <a href="projects.html" class="hover:text-amber-600">Projects</a>
-                    <a href="redevelop.html" class="hover:text-amber-600">Redevelop</a>
-                    <a href="career.html" class="hover:text-amber-600">Career</a>
-                    <a href="contact.html" class="hover:text-amber-600">Contact</a>
-                </nav>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Contact Info</h4>
-                <p>123 Main Street, City, Country</p>
-                <p>Email: info@rudrahitech.com</p>
-                <p>Phone: +123 456 7890</p>
+<footer class="bg-gray-900 text-white py-12 mt-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
+
+        <!-- Company Info -->
+        <div class="text-center md:text-left">
+            <img src="images/logos.png" alt="Rudra Hitech Infra Pvt. Ltd. logo"
+                class="h-16 mb-4 mx-auto md:mx-0">
+            <h3 class="text-xl font-bold mb-2">Rudra Hitech Infra Pvt. Ltd.</h3>
+            <p class="text-sm text-gray-400 mb-4">
+                Building Infrastructure with Trust, Quality & Excellence
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-600 transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-600 transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-600 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
-        <div class="border-t border-gray-700 py-6 mt-10">
-            <p class="text-center text-xs text-gray-400">© 2025 Rudra Hitech Infra Pvt. Ltd. All Rights Reserved.</p>
+
+        <!-- Quick Links -->
+        <div class="text-center md:text-left">
+            <h4 class="font-semibold mb-4 text-lg flex items-center justify-center md:justify-start gap-2">
+                <i class="fas fa-link text-amber-500"></i> Quick Links
+            </h4>
+            <nav class="flex flex-col space-y-3 text-sm">
+                <a href="index.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> Home
+                </a>
+                <a href="about.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> About Us
+                </a>
+                <a href="projects.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> Projects
+                </a>
+                <a href="redevelop.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> Redevelop
+                </a>
+                <a href="career.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> Career
+                </a>
+                <a href="contact.html" class="hover:text-amber-500 transition">
+                    <i class="fas fa-angle-right mr-2 text-amber-500"></i> Contact
+                </a>
+            </nav>
         </div>
-    </footer>
+
+        <!-- Contact Info -->
+        <div class="text-center md:text-left">
+            <h4 class="font-semibold mb-4 text-lg flex items-center justify-center md:justify-start gap-2">
+                <i class="fas fa-address-card text-amber-500"></i> Contact Info
+            </h4>
+
+            <p class="text-sm text-gray-400 flex items-start gap-3 mb-3">
+                <i class="fas fa-location-dot text-amber-500 mt-1"></i>
+                <span>
+                    Shop No. 08, Rameshwaram Apartment,<br>
+                    Ambavadi A1-471, Nallosapare East,<br>
+                    Vasai, Thane, Maharashtra – 401209
+                </span>
+            </p>
+
+            <p class="text-sm flex items-center gap-3 mb-2">
+                <i class="fas fa-envelope text-amber-500"></i>
+                <a href="mailto:sadhanadubey184@gmail.com" class="hover:text-amber-500 transition">
+                    sadhanadubey184@gmail.com
+                </a>
+            </p>
+
+            <p class="text-sm flex items-center gap-3">
+                <i class="fas fa-building text-amber-500"></i>
+                CIN: U43299MH2025PTC441218
+            </p>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 mt-10 pt-6">
+        <p class="text-center text-xs text-gray-400">
+            © 2025 Rudra Hitech Infra Pvt. Ltd. All Rights Reserved.
+        </p>
+    </div>
+</footer>
 </body>
 
 </html>
